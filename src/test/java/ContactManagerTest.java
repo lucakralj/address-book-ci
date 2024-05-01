@@ -21,7 +21,7 @@ public class ContactManagerTest {
         contactManager = new ContactManager(new MockContactDAO());
     }
 
-    @Test
+    @org.junit.Test
     public void testSearchInOneContact() {
         contactManager.addContact(contacts[0]);
         List<Contact> contacts = contactManager.searchContacts("John");
